@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "得分:0"; ObjectID = "0S6-Zx-ORb"; */
+"0S6-Zx-ORb.text" = "得分:0";
+
+/* Class = "UIButton"; normalTitle = "开始游戏"; ObjectID = "36m-l9-wBu"; */
+"36m-l9-wBu.normalTitle" = "开始游戏";
+
+/* Class = "UILabel"; text = "最高记录"; ObjectID = "4mg-fN-NzD"; */
+"4mg-fN-NzD.text" = "最高记录";
+
+/* Class = "UILabel"; text = "排行榜"; ObjectID = "6pa-Wj-5ao"; */
+"6pa-Wj-5ao.text" = "排行榜";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "7kB-cI-OaA"; */
+"7kB-cI-OaA.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Pow2"; ObjectID = "8cL-2D-Exr"; */
+"8cL-2D-Exr.title" = "Pow2";
+
+/* Class = "UILabel"; text = "合并数字以获得更大数字的方块!"; ObjectID = "9dj-wP-4EA"; */
+"9dj-wP-4EA.text" = "合并数字以获得更大数字的方块!";
+
+/* Class = "UILabel"; text = "玩法简介"; ObjectID = "9j9-59-UxF"; */
+"9j9-59-UxF.text" = "玩法简介";
+
+/* Class = "UINavigationItem"; title = "选择主题"; ObjectID = "A9m-BJ-nSj"; */
+"A9m-BJ-nSj.title" = "选择主题";
+
+/* Class = "UILabel"; text = "最高记录"; ObjectID = "EDg-rv-xE9"; */
+"EDg-rv-xE9.text" = "最高记录";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "FHf-M5-vz0"; */
+"FHf-M5-vz0.text" = "0";
+
+/* Class = "UILabel"; text = "当前得分"; ObjectID = "HFT-9t-ZU8"; */
+"HFT-9t-ZU8.text" = "当前得分";
+
+/* Class = "UILabel"; text = "默认"; ObjectID = "Kqm-Zn-CN1"; */
+"Kqm-Zn-CN1.text" = "默认";
+
+/* Class = "UILabel"; text = "难度"; ObjectID = "Oen-BJ-Gwl"; */
+"Oen-BJ-Gwl.text" = "难度";
+
+/* Class = "UILabel"; text = "时间:0"; ObjectID = "Pi1-hX-kLJ"; */
+"Pi1-hX-kLJ.text" = "时间:0";
+
+/* Class = "UILabel"; text = "简单"; ObjectID = "Tat-qH-0LH"; */
+"Tat-qH-0LH.text" = "简单";
+
+/* Class = "UILabel"; text = "分享给朋友"; ObjectID = "Umn-pg-WXD"; */
+"Umn-pg-WXD.text" = "分享给朋友";
+
+/* Class = "UINavigationItem"; title = "历史回放"; ObjectID = "ZSG-i1-q7k"; */
+"ZSG-i1-q7k.title" = "历史回放";
+
+/* Class = "UILabel"; text = "模式"; ObjectID = "axN-e0-3U8"; */
+"axN-e0-3U8.text" = "模式";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dQU-b9-B6V"; */
+"dQU-b9-B6V.text" = "0";
+
+/* Class = "UILabel"; text = "历史记录"; ObjectID = "eWd-m2-C4Y"; */
+"eWd-m2-C4Y.text" = "历史记录";
+
+/* Class = "UILabel"; text = "当前得分"; ObjectID = "eu1-JT-x2P"; */
+"eu1-JT-x2P.text" = "当前得分";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "jge-jg-ycC"; */
+"jge-jg-ycC.text" = "0";
+
+/* Class = "UILabel"; text = "主题"; ObjectID = "mVh-Ru-AHc"; */
+"mVh-Ru-AHc.text" = "主题";
+
+/* Class = "UILabel"; text = "支持我们"; ObjectID = "nti-LS-nzY"; */
+"nti-LS-nzY.text" = "支持我们";
+
+/* Class = "UINavigationItem"; title = "设置"; ObjectID = "r9d-Js-RF9"; */
+"r9d-Js-RF9.title" = "设置";
+
+/* Class = "UILabel"; text = "经典模式"; ObjectID = "sbr-79-4Cs"; */
+"sbr-79-4Cs.text" = "经典模式";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tYK-dB-Bjr"; */
+"tYK-dB-Bjr.text" = "Label";
+
+/* Class = "UILabel"; text = "摇动"; ObjectID = "uE7-u8-53L"; */
+"uE7-u8-53L.text" = "摇动";
+
+/* Class = "UIBarButtonItem"; title = "时间排序"; ObjectID = "vAM-Jn-GGL"; */
+"vAM-Jn-GGL.title" = "时间排序";
+
+/* Class = "UINavigationItem"; title = "历史记录"; ObjectID = "zdq-ct-B6I"; */
+"zdq-ct-B6I.title" = "历史记录";

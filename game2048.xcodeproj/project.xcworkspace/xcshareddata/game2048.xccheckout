@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>85BD7289-B8AC-47F8-99CF-1A9FAA958ACD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>game2048</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>98F5A658-B2D1-40B4-86CB-3ACDE78BAF51</key>
+		<string>https://svn.baidu.com/app/wise/wmap/trunk/client/components/ios/complatform</string>
+		<key>CAD525BD-17B0-4B65-8208-229D927F8FAA</key>
+		<string>https://github.com/charsunny/game2048.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>game2048/game2048.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>98F5A658-B2D1-40B4-86CB-3ACDE78BAF51</key>
+		<string>../../..</string>
+		<key>CAD525BD-17B0-4B65-8208-229D927F8FAA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>98F5A658-B2D1-40B4-86CB-3ACDE78BAF51</key>
+		<string>https://svn.baidu.com/app/wise/wmap</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/charsunny/game2048.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>98F5A658-B2D1-40B4-86CB-3ACDE78BAF51</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CAD525BD-17B0-4B65-8208-229D927F8FAA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>game2048</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>98F5A658-B2D1-40B4-86CB-3ACDE78BAF51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>workspace</string>
+		</dict>
+	</array>
+</dict>
+</plist>

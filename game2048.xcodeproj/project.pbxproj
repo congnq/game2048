@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15EAF0F6349A3E37B8C62C51 /* libPods-game2048.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D0E2114AF334805185461 /* libPods-game2048.a */; };
+		5022492918E1C7D4009ABF12 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5022492818E1C7D4009ABF12 /* GameKit.framework */; };
+		5076807118E1CD1700BD9422 /* SXGCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076807018E1CD1700BD9422 /* SXGCHelper.m */; };
+		50ADDAC218E2BF2A001697F5 /* SXReplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADDAC118E2BF2A001697F5 /* SXReplayViewController.m */; };
+		50AFD24918E0033400EBEA97 /* SXHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD24818E0033400EBEA97 /* SXHistoryModel.m */; };
+		50AFD24C18E00E5B00EBEA97 /* SXAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD24B18E00E5B00EBEA97 /* SXAppConfig.m */; };
+		50AFD24F18E020B800EBEA97 /* SXHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD24E18E020B800EBEA97 /* SXHistoryTableViewController.m */; };
+		50AFD27C18E1373800EBEA97 /* SXTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD27B18E1373800EBEA97 /* SXTutorialViewController.m */; };
+		50AFD2BF18E15E6200EBEA97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C7A88918D9AE4E00A22083 /* Images.xcassets */; };
+		50AFD2C418E171CA00EBEA97 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AFD2C118E171CA00EBEA97 /* libWeChatSDK.a */; };
+		50C7A87218D9AE4E00A22083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C7A87118D9AE4E00A22083 /* Foundation.framework */; };
+		50C7A87418D9AE4E00A22083 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C7A87318D9AE4E00A22083 /* CoreGraphics.framework */; };
+		50C7A87618D9AE4E00A22083 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C7A87518D9AE4E00A22083 /* UIKit.framework */; };
+		50C7A87C18D9AE4E00A22083 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50C7A87A18D9AE4E00A22083 /* InfoPlist.strings */; };
+		50C7A87E18D9AE4E00A22083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A87D18D9AE4E00A22083 /* main.m */; };
+		50C7A88218D9AE4E00A22083 /* SXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A88118D9AE4E00A22083 /* SXAppDelegate.m */; };
+		50C7A88518D9AE4E00A22083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C7A88318D9AE4E00A22083 /* Main.storyboard */; };
+		50C7A88818D9AE4E00A22083 /* SXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A88718D9AE4E00A22083 /* SXViewController.m */; };
+		50C7A96918DADE1D00A22083 /* SXNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A96818DADE1D00A22083 /* SXNumberCell.m */; };
+		50C7A9AD18DC323F00A22083 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50C7A9AC18DC323F00A22083 /* theme.plist */; };
+		50C7A9B018DC362D00A22083 /* SXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A9AF18DC362D00A22083 /* SXSettingViewController.m */; };
+		50C7A9B318DC364600A22083 /* SXThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A9B218DC364600A22083 /* SXThemeViewController.m */; };
+		F47C6E991FCBEF2C0089FA18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47C6E9B1FCBEF2C0089FA18 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042B2A59B2107EF90887BDAC /* Pods-game2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game2048.release.xcconfig"; path = "Pods/Target Support Files/Pods-game2048/Pods-game2048.release.xcconfig"; sourceTree = "<group>"; };
+		5022492818E1C7D4009ABF12 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		5076806F18E1CD1700BD9422 /* SXGCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXGCHelper.h; sourceTree = "<group>"; };
+		5076807018E1CD1700BD9422 /* SXGCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXGCHelper.m; sourceTree = "<group>"; };
+		50ADDAC018E2BF2A001697F5 /* SXReplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReplayViewController.h; sourceTree = "<group>"; };
+		50ADDAC118E2BF2A001697F5 /* SXReplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReplayViewController.m; sourceTree = "<group>"; };
+		50AFD24718E0033400EBEA97 /* SXHistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXHistoryModel.h; sourceTree = "<group>"; };
+		50AFD24818E0033400EBEA97 /* SXHistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXHistoryModel.m; sourceTree = "<group>"; };
+		50AFD24A18E00E5B00EBEA97 /* SXAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXAppConfig.h; sourceTree = "<group>"; };
+		50AFD24B18E00E5B00EBEA97 /* SXAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXAppConfig.m; sourceTree = "<group>"; };
+		50AFD24D18E020B800EBEA97 /* SXHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXHistoryTableViewController.h; sourceTree = "<group>"; };
+		50AFD24E18E020B800EBEA97 /* SXHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXHistoryTableViewController.m; sourceTree = "<group>"; };
+		50AFD27A18E1373800EBEA97 /* SXTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTutorialViewController.h; sourceTree = "<group>"; };
+		50AFD27B18E1373800EBEA97 /* SXTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTutorialViewController.m; sourceTree = "<group>"; };
+		50AFD2C118E171CA00EBEA97 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		50AFD2C218E171CA00EBEA97 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		50AFD2C318E171CA00EBEA97 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		50C7A86E18D9AE4E00A22083 /* game2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = game2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C7A87118D9AE4E00A22083 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50C7A87318D9AE4E00A22083 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50C7A87518D9AE4E00A22083 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50C7A87918D9AE4E00A22083 /* game2048-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "game2048-Info.plist"; sourceTree = "<group>"; };
+		50C7A87B18D9AE4E00A22083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50C7A87D18D9AE4E00A22083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50C7A87F18D9AE4E00A22083 /* game2048-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "game2048-Prefix.pch"; sourceTree = "<group>"; };
+		50C7A88018D9AE4E00A22083 /* SXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAppDelegate.h; sourceTree = "<group>"; };
+		50C7A88118D9AE4E00A22083 /* SXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXAppDelegate.m; sourceTree = "<group>"; };
+		50C7A88418D9AE4E00A22083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C7A88618D9AE4E00A22083 /* SXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXViewController.h; sourceTree = "<group>"; };
+		50C7A88718D9AE4E00A22083 /* SXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXViewController.m; sourceTree = "<group>"; };
+		50C7A88918D9AE4E00A22083 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50C7A89018D9AE4F00A22083 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		50C7A89818D9AE4F00A22083 /* game2048Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "game2048Tests-Info.plist"; sourceTree = "<group>"; };
+		50C7A89A18D9AE4F00A22083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50C7A89C18D9AE4F00A22083 /* game2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = game2048Tests.m; sourceTree = "<group>"; };
+		50C7A96718DADE1D00A22083 /* SXNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXNumberCell.h; sourceTree = "<group>"; };
+		50C7A96818DADE1D00A22083 /* SXNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXNumberCell.m; sourceTree = "<group>"; };
+		50C7A9AC18DC323F00A22083 /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
+		50C7A9AE18DC362D00A22083 /* SXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSettingViewController.h; sourceTree = "<group>"; };
+		50C7A9AF18DC362D00A22083 /* SXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSettingViewController.m; sourceTree = "<group>"; };
+		50C7A9B118DC364600A22083 /* SXThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXThemeViewController.h; sourceTree = "<group>"; };
+		50C7A9B218DC364600A22083 /* SXThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXThemeViewController.m; sourceTree = "<group>"; };
+		950D0E2114AF334805185461 /* libPods-game2048.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-game2048.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E631F1AC03664F0A81279DCD /* Pods-game2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game2048.debug.xcconfig"; path = "Pods/Target Support Files/Pods-game2048/Pods-game2048.debug.xcconfig"; sourceTree = "<group>"; };
+		F47C6E941FCBEE4B0089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F47C6E951FCBEE4B0089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		F47C6E961FCBEE4B0089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F47C6E9A1FCBEF2C0089FA18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F47C6E9C1FCBEF3E0089FA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F47C6E9D1FCBEF460089FA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F47C6E9E1FCBEF460089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F47C6E9F1FCBFEF00089FA18 /* game2048.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = game2048.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C7A86B18D9AE4E00A22083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C7A87418D9AE4E00A22083 /* CoreGraphics.framework in Frameworks */,
+				50C7A87618D9AE4E00A22083 /* UIKit.framework in Frameworks */,
+				50AFD2C418E171CA00EBEA97 /* libWeChatSDK.a in Frameworks */,
+				50C7A87218D9AE4E00A22083 /* Foundation.framework in Frameworks */,
+				5022492918E1C7D4009ABF12 /* GameKit.framework in Frameworks */,
+				15EAF0F6349A3E37B8C62C51 /* libPods-game2048.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5022492A18E1CA1E009ABF12 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50C7A9B118DC364600A22083 /* SXThemeViewController.h */,
+				50AFD24D18E020B800EBEA97 /* SXHistoryTableViewController.h */,
+				50AFD24E18E020B800EBEA97 /* SXHistoryTableViewController.m */,
+				50AFD27A18E1373800EBEA97 /* SXTutorialViewController.h */,
+				50AFD27B18E1373800EBEA97 /* SXTutorialViewController.m */,
+				50C7A9B218DC364600A22083 /* SXThemeViewController.m */,
+				50C7A9AE18DC362D00A22083 /* SXSettingViewController.h */,
+				50C7A9AF18DC362D00A22083 /* SXSettingViewController.m */,
+				50C7A88618D9AE4E00A22083 /* SXViewController.h */,
+				50C7A88718D9AE4E00A22083 /* SXViewController.m */,
+				50ADDAC018E2BF2A001697F5 /* SXReplayViewController.h */,
+				50ADDAC118E2BF2A001697F5 /* SXReplayViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		5076806C18E1CCA700BD9422 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				50AFD24A18E00E5B00EBEA97 /* SXAppConfig.h */,
+				50AFD24B18E00E5B00EBEA97 /* SXAppConfig.m */,
+				5076806F18E1CD1700BD9422 /* SXGCHelper.h */,
+				5076807018E1CD1700BD9422 /* SXGCHelper.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		5076806D18E1CCBC00BD9422 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				50C7A96718DADE1D00A22083 /* SXNumberCell.h */,
+				50C7A96818DADE1D00A22083 /* SXNumberCell.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		5076806E18E1CCCC00BD9422 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				50AFD24718E0033400EBEA97 /* SXHistoryModel.h */,
+				50AFD24818E0033400EBEA97 /* SXHistoryModel.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		50AFD2C018E171CA00EBEA97 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				50AFD2C118E171CA00EBEA97 /* libWeChatSDK.a */,
+				50AFD2C218E171CA00EBEA97 /* WXApi.h */,
+				50AFD2C318E171CA00EBEA97 /* WXApiObject.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		50C7A86518D9AE4E00A22083 = {
+			isa = PBXGroup;
+			children = (
+				50C7A87718D9AE4E00A22083 /* game2048 */,
+				50C7A89618D9AE4F00A22083 /* game2048Tests */,
+				50C7A87018D9AE4E00A22083 /* Frameworks */,
+				50C7A86F18D9AE4E00A22083 /* Products */,
+				6F14AD02DF24E6312393F621 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		50C7A86F18D9AE4E00A22083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C7A86E18D9AE4E00A22083 /* game2048.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C7A87018D9AE4E00A22083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5022492818E1C7D4009ABF12 /* GameKit.framework */,
+				50C7A87118D9AE4E00A22083 /* Foundation.framework */,
+				50C7A87318D9AE4E00A22083 /* CoreGraphics.framework */,
+				50C7A87518D9AE4E00A22083 /* UIKit.framework */,
+				50C7A89018D9AE4F00A22083 /* XCTest.framework */,
+				950D0E2114AF334805185461 /* libPods-game2048.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50C7A87718D9AE4E00A22083 /* game2048 */ = {
+			isa = PBXGroup;
+			children = (
+				F47C6E9F1FCBFEF00089FA18 /* game2048.entitlements */,
+				5076806E18E1CCCC00BD9422 /* models */,
+				5076806D18E1CCBC00BD9422 /* views */,
+				5076806C18E1CCA700BD9422 /* utils */,
+				5022492A18E1CA1E009ABF12 /* controllers */,
+				50AFD2C018E171CA00EBEA97 /* WeChat */,
+				50C7A87818D9AE4E00A22083 /* Supporting Files */,
+			);
+			path = game2048;
+			sourceTree = "<group>";
+		};
+		50C7A87818D9AE4E00A22083 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C7A88318D9AE4E00A22083 /* Main.storyboard */,
+				50C7A88918D9AE4E00A22083 /* Images.xcassets */,
+				50C7A88018D9AE4E00A22083 /* SXAppDelegate.h */,
+				50C7A88118D9AE4E00A22083 /* SXAppDelegate.m */,
+				50C7A87918D9AE4E00A22083 /* game2048-Info.plist */,
+				50C7A87A18D9AE4E00A22083 /* InfoPlist.strings */,
+				50C7A87D18D9AE4E00A22083 /* main.m */,
+				50C7A87F18D9AE4E00A22083 /* game2048-Prefix.pch */,
+				50C7A9AC18DC323F00A22083 /* theme.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50C7A89618D9AE4F00A22083 /* game2048Tests */ = {
+			isa = PBXGroup;
+			children = (
+				50C7A89C18D9AE4F00A22083 /* game2048Tests.m */,
+				50C7A89718D9AE4F00A22083 /* Supporting Files */,
+			);
+			path = game2048Tests;
+			sourceTree = "<group>";
+		};
+		50C7A89718D9AE4F00A22083 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C7A89818D9AE4F00A22083 /* game2048Tests-Info.plist */,
+				50C7A89918D9AE4F00A22083 /* InfoPlist.strings */,
+				F47C6E9B1FCBEF2C0089FA18 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F14AD02DF24E6312393F621 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E631F1AC03664F0A81279DCD /* Pods-game2048.debug.xcconfig */,
+				042B2A59B2107EF90887BDAC /* Pods-game2048.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C7A86D18D9AE4E00A22083 /* game2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C7A8A018D9AE4F00A22083 /* Build configuration list for PBXNativeTarget "game2048" */;
+			buildPhases = (
+				8DB39B04BEB3982B4821287D /* [CP] Check Pods Manifest.lock */,
+				50C7A86A18D9AE4E00A22083 /* Sources */,
+				50C7A86B18D9AE4E00A22083 /* Frameworks */,
+				50C7A86C18D9AE4E00A22083 /* Resources */,
+				BFF0A54802D86BCEBF079B60 /* [CP] Embed Pods Frameworks */,
+				4239C11137699C330551CCA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = game2048;
+			productName = game2048;
+			productReference = 50C7A86E18D9AE4E00A22083 /* game2048.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C7A86618D9AE4E00A22083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SX;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sun Xi";
+				TargetAttributes = {
+					50C7A86D18D9AE4E00A22083 = {
+						DevelopmentTeam = B83JBVZ6M5;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 50C7A86918D9AE4E00A22083 /* Build configuration list for PBXProject "game2048" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = 50C7A86518D9AE4E00A22083;
+			productRefGroup = 50C7A86F18D9AE4E00A22083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C7A86D18D9AE4E00A22083 /* game2048 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C7A86C18D9AE4E00A22083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AFD2BF18E15E6200EBEA97 /* Images.xcassets in Resources */,
+				F47C6E991FCBEF2C0089FA18 /* Localizable.strings in Resources */,
+				50C7A9AD18DC323F00A22083 /* theme.plist in Resources */,
+				50C7A87C18D9AE4E00A22083 /* InfoPlist.strings in Resources */,
+				50C7A88518D9AE4E00A22083 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4239C11137699C330551CCA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-game2048/Pods-game2048-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB39B04BEB3982B4821287D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-game2048-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF0A54802D86BCEBF079B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-game2048/Pods-game2048-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C7A86A18D9AE4E00A22083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C7A88818D9AE4E00A22083 /* SXViewController.m in Sources */,
+				50AFD24F18E020B800EBEA97 /* SXHistoryTableViewController.m in Sources */,
+				50C7A9B318DC364600A22083 /* SXThemeViewController.m in Sources */,
+				50AFD24C18E00E5B00EBEA97 /* SXAppConfig.m in Sources */,
+				50AFD24918E0033400EBEA97 /* SXHistoryModel.m in Sources */,
+				50C7A96918DADE1D00A22083 /* SXNumberCell.m in Sources */,
+				50ADDAC218E2BF2A001697F5 /* SXReplayViewController.m in Sources */,
+				50C7A87E18D9AE4E00A22083 /* main.m in Sources */,
+				50C7A9B018DC362D00A22083 /* SXSettingViewController.m in Sources */,
+				5076807118E1CD1700BD9422 /* SXGCHelper.m in Sources */,
+				50C7A88218D9AE4E00A22083 /* SXAppDelegate.m in Sources */,
+				50AFD27C18E1373800EBEA97 /* SXTutorialViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50C7A87A18D9AE4E00A22083 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C7A87B18D9AE4E00A22083 /* en */,
+				F47C6E941FCBEE4B0089FA18 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50C7A88318D9AE4E00A22083 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C7A88418D9AE4E00A22083 /* Base */,
+				F47C6E951FCBEE4B0089FA18 /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C7A89918D9AE4F00A22083 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C7A89A18D9AE4F00A22083 /* en */,
+				F47C6E961FCBEE4B0089FA18 /* zh-Hant */,
+				F47C6E9C1FCBEF3E0089FA18 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F47C6E9B1FCBEF2C0089FA18 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47C6E9A1FCBEF2C0089FA18 /* en */,
+				F47C6E9D1FCBEF460089FA18 /* Base */,
+				F47C6E9E1FCBEF460089FA18 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C7A89E18D9AE4F00A22083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50C7A89F18D9AE4F00A22083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C7A8A118D9AE4F00A22083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E631F1AC03664F0A81279DCD /* Pods-game2048.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = game2048/game2048.entitlements;
+				DEVELOPMENT_TEAM = 5NX83V4A32;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "game2048/game2048-Prefix.pch";
+				INFOPLIST_FILE = "game2048/game2048-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/game2048/WeChat",
+					"$(PROJECT_DIR)/game2048/libWeiboSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.congnq.game2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4c3a984-aa06-4cb3-b668-2a022b0fc112";
+				PROVISIONING_PROFILE_SPECIFIER = "Provision Development";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50C7A8A218D9AE4F00A22083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042B2A59B2107EF90887BDAC /* Pods-game2048.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = game2048/game2048.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5NX83V4A32;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "game2048/game2048-Prefix.pch";
+				INFOPLIST_FILE = "game2048/game2048-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/game2048/WeChat",
+					"$(PROJECT_DIR)/game2048/libWeiboSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.congnq.game2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ae737088-32f6-4f19-9f11-3e3342413051";
+				PROVISIONING_PROFILE_SPECIFIER = "Provision AppStore";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C7A86918D9AE4E00A22083 /* Build configuration list for PBXProject "game2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C7A89E18D9AE4F00A22083 /* Debug */,
+				50C7A89F18D9AE4F00A22083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C7A8A018D9AE4F00A22083 /* Build configuration list for PBXNativeTarget "game2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C7A8A118D9AE4F00A22083 /* Debug */,
+				50C7A8A218D9AE4F00A22083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C7A86618D9AE4E00A22083 /* Project object */;
+}
