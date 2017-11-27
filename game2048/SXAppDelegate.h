@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JPush/JPUSHService.h>
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
 
 
-@interface SXAppDelegate : UIResponder <UIApplicationDelegate>
+@interface SXAppDelegate : UIResponder <UIApplicationDelegate,JPUSHRegisterDelegate,UNUserNotificationCenterDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

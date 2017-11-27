@@ -5,7 +5,7 @@
 //  Created by Sun Xi on 3/26/14.
 //  Copyright (c) 2014 Sun Xi. All rights reserved.
 //
-#import "WXApi.h"
+
 
 #import "SXReplayViewController.h"
 #import "SXAppConfig.h"
@@ -116,7 +116,6 @@
 #pragma mark -- share methods
 
 - (IBAction)shareButtonClicked:(id)sender {
-    [[[UIActionSheet alloc] initWithTitle:@"分享" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"微信好友",@"微信朋友圈",@"新浪微博",nil] showInView:self.view];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {

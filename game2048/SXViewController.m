@@ -11,7 +11,7 @@
 #import "SXSettingViewController.h"
 #import "SXTutorialViewController.h"
 #import "SXAppConfig.h"
-#import "WXApi.h"
+
 
 
 @interface SXViewController ()<UIAlertViewDelegate,UIActionSheetDelegate>

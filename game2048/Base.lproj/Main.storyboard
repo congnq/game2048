@@ -241,11 +241,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pow2" id="8cL-2D-Exr">
-                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="dZb-WN-CP7">
-                            <connections>
-                                <action selector="shareButtonClicked:" destination="ocm-B5-y3m" id="BbI-aC-EiE"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="BaseNavigationBar_Right_White_Setting_Highlighted" id="D55-iZ-CRR">
                             <inset key="imageInsets" minX="-10" minY="0.0" maxX="10" maxY="0.0"/>
                             <connections>
@@ -706,7 +701,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XT5-da-46D">
-                                <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="84" width="320" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szf-Y6-1Ex">
                                         <rect key="frame" x="223" y="3" width="90" height="44"/>
