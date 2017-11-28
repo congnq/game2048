@@ -5,3 +5,14 @@
   Created by Cong Nguyen on 11/27/17.
   Copyright © 2017 Sun Xi. All rights reserved.
 */
+"Score:" = "Score";
+"Share" = "Share";
+"Prompt" = "Prompt";
+"Your Score" = "Your Score:";
+"Your max number is" = "Your max number is:";
+"Your highest score is" = "Your highest score is:";
+"New game" = "New game";
+"Try again" = "Try again";
+"Do you want to restart?" = "Do you want to restart?";
+"Yes" = "Yes";
+"No" = "No";

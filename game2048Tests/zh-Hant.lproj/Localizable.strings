@@ -6,4 +6,14 @@
   Copyright © 2017 Sun Xi. All rights reserved.
 */
 "Score:" = "得分:";
-"分享" = "Share";
+"Share" = "分享";
+"Prompt" = "提示";
+"Your Score" = "得分是:";
+"Your max number is" = "最大数字是:";
+"Your highest score is" = "最高分是:";
+"New game" = "再来一发";
+"Try again" = "撤销一下";
+"Do you want to restart?" = "确定要重新开始吗？";
+"Yes" = "再来一发";
+"Try again" = "撤销一下";
+"No" = "取消";

@@ -40,6 +40,8 @@
 		F4B57ED61FCC1606002C79FF /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B57ED51FCC1606002C79FF /* libresolv.tbd */; };
 		F4B57EDA1FCC545A002C79FF /* SXDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57ED91FCC545A002C79FF /* SXDataObject.m */; };
 		F4B57EDE1FCC560D002C79FF /* NSDictionary+JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EDD1FCC560D002C79FF /* NSDictionary+JSONParser.m */; };
+		F4B57EE41FCCFEAE002C79FF /* JKNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EE11FCCFEAD002C79FF /* JKNotifier.m */; };
+		F4B57EE51FCCFEAE002C79FF /* JKNotifierBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EE31FCCFEAD002C79FF /* JKNotifierBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,10 @@
 		F4B57ED91FCC545A002C79FF /* SXDataObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXDataObject.m; sourceTree = "<group>"; };
 		F4B57EDC1FCC560D002C79FF /* NSDictionary+JSONParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONParser.h"; sourceTree = "<group>"; };
 		F4B57EDD1FCC560D002C79FF /* NSDictionary+JSONParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONParser.m"; sourceTree = "<group>"; };
+		F4B57EE01FCCFEAD002C79FF /* JKNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNotifier.h; sourceTree = "<group>"; };
+		F4B57EE11FCCFEAD002C79FF /* JKNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNotifier.m; sourceTree = "<group>"; };
+		F4B57EE21FCCFEAD002C79FF /* JKNotifierBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNotifierBar.h; sourceTree = "<group>"; };
+		F4B57EE31FCCFEAD002C79FF /* JKNotifierBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNotifierBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +237,7 @@
 		50C7A87718D9AE4E00A22083 /* game2048 */ = {
 			isa = PBXGroup;
 			children = (
+				F4B57EDF1FCCFEAD002C79FF /* PushNotificationView */,
 				F4B57ED71FCC524C002C79FF /* Handle2 */,
 				F47C6E9F1FCBFEF00089FA18 /* game2048.entitlements */,
 				5076806E18E1CCCC00BD9422 /* models */,
@@ -304,6 +311,17 @@
 				F4B57EDD1FCC560D002C79FF /* NSDictionary+JSONParser.m */,
 			);
 			path = ParseHelper;
+			sourceTree = "<group>";
+		};
+		F4B57EDF1FCCFEAD002C79FF /* PushNotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				F4B57EE01FCCFEAD002C79FF /* JKNotifier.h */,
+				F4B57EE11FCCFEAD002C79FF /* JKNotifier.m */,
+				F4B57EE21FCCFEAD002C79FF /* JKNotifierBar.h */,
+				F4B57EE31FCCFEAD002C79FF /* JKNotifierBar.m */,
+			);
+			path = PushNotificationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,9 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B57EE41FCCFEAE002C79FF /* JKNotifier.m in Sources */,
 				50C7A88818D9AE4E00A22083 /* SXViewController.m in Sources */,
 				50AFD24F18E020B800EBEA97 /* SXHistoryTableViewController.m in Sources */,
 				50C7A9B318DC364600A22083 /* SXThemeViewController.m in Sources */,
+				F4B57EE51FCCFEAE002C79FF /* JKNotifierBar.m in Sources */,
 				50AFD24C18E00E5B00EBEA97 /* SXAppConfig.m in Sources */,
 				50AFD24918E0033400EBEA97 /* SXHistoryModel.m in Sources */,
 				50C7A96918DADE1D00A22083 /* SXNumberCell.m in Sources */,

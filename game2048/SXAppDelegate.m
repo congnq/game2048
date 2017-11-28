@@ -16,10 +16,16 @@
 #endif
 #import "SXGCHelper.h"
 #import <AdSupport/AdSupport.h>
-
+#import "JKNotifier.h"
+#import "JKNotifierBar.h"
 
 #define AppKey_WeiXin               @"wxd930ea5d5a258f4f"//@"wx9a08a4f59ce91bf6"
 #define AppKey_WeiBo                @"979020811"
+@interface SXAppDelegate () {
+    UIView * notifView;
+}
+
+@end
 
 @implementation SXAppDelegate
 
@@ -137,10 +143,22 @@
 
 
 #pragma mark ====== JPUSHRegisterDelegate =======
-- (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(NSInteger options))completionHandler {
+- (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification
+          withCompletionHandler:(void (^)(NSInteger options))completionHandler {
+    
     NSDictionary * userInfo = notification.request.content.userInfo;
-    NSLog(@"iOS10 前台收到远程通知:%@", [self logDic:userInfo]);
+    UNNotificationRequest *request = notification.request; // 收到推送的请求
+    UNNotificationContent *content = request.content; // 收到推送的消息内容
+    
+    NSNumber *badge = content.badge;  // 推送消息的角标
+    NSString *body = content.body;    // 推送消息体
+    UNNotificationSound *sound = content.sound;  // 推送消息的声音
+    NSString *subtitle = content.subtitle;  // 推送消息的副标题
+    NSString *title = content.title;
+    [JKNotifier showNotifer:body name:title icon:nil dismissAfter:3];
+    
 }
+
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler {
     NSDictionary * userInfo = response.notification.request.content.userInfo;
     UNNotificationRequest *request = response.notification.request; // 收到推送的请求

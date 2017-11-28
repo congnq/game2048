@@ -233,7 +233,8 @@
         }
         [self saveState];
         [[NSUserDefaults standardUserDefaults] setValue:@(_highScore) forKey:@"highscore"];
-        [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat: @"LOSER!\n 得分是:%ld \n 最大数字是:%d \n 最高分是:%ld",(long)_nowScore, _maxNum,(long)_highScore] delegate:self cancelButtonTitle:@"再来一发" otherButtonTitles:@"撤销一下", nil] show];
+        
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Promt", @"") message:[NSString stringWithFormat: @"Game Over!\n %@ %ld \n %@ %d \n %@ %ld",NSLocalizedString(@"Your Score", @""),(long)_nowScore,NSLocalizedString(@"Your max number is", @"") ,_maxNum,NSLocalizedString(@"Your highest score is", @"") ,(long)_highScore] delegate:self cancelButtonTitle:NSLocalizedString(@"New game",@"") otherButtonTitles:NSLocalizedString(@"Try again",@""), nil] show];
     }
     if(_moved) {
         [self addNumberCell];
@@ -500,7 +501,7 @@
     if(_isAutomatic) {
         [self onFastForward:nil];
     }
-    [[[UIAlertView alloc] initWithTitle:@"提示" message:@"确定要重新开始吗？" delegate:self cancelButtonTitle:@"再来一发" otherButtonTitles:@"取消", nil] show];
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Promt", @"") message:NSLocalizedString(@"Do you want to restart?", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"Yes", @"") otherButtonTitles:NSLocalizedString(@"NO", @""), nil] show];
 }
 
 #pragma mark -- notification
@@ -545,7 +546,7 @@
     if(_isAutomatic) {
         [self onFastForward:nil];
     }
-    [[[UIActionSheet alloc] initWithTitle:@"分享" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"微信好友",@"微信朋友圈",@"新浪微博",nil] showInView:self.view];
+    
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
