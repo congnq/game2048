@@ -42,6 +42,9 @@
 		F4B57EDE1FCC560D002C79FF /* NSDictionary+JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EDD1FCC560D002C79FF /* NSDictionary+JSONParser.m */; };
 		F4B57EE41FCCFEAE002C79FF /* JKNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EE11FCCFEAD002C79FF /* JKNotifier.m */; };
 		F4B57EE51FCCFEAE002C79FF /* JKNotifierBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EE31FCCFEAD002C79FF /* JKNotifierBar.m */; };
+		F4B57EE81FCD4C75002C79FF /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B57EE71FCD4C75002C79FF /* Web.storyboard */; };
+		F4B57EEC1FCD4D7B002C79FF /* SXWebOpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EEB1FCD4D7B002C79FF /* SXWebOpenViewController.m */; };
+		F4B57EEF1FCD506A002C79FF /* SXNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B57EEE1FCD506A002C79FF /* SXNetworkHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +114,11 @@
 		F4B57EE11FCCFEAD002C79FF /* JKNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNotifier.m; sourceTree = "<group>"; };
 		F4B57EE21FCCFEAD002C79FF /* JKNotifierBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNotifierBar.h; sourceTree = "<group>"; };
 		F4B57EE31FCCFEAD002C79FF /* JKNotifierBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNotifierBar.m; sourceTree = "<group>"; };
+		F4B57EE71FCD4C75002C79FF /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		F4B57EEA1FCD4D7B002C79FF /* SXWebOpenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXWebOpenViewController.h; sourceTree = "<group>"; };
+		F4B57EEB1FCD4D7B002C79FF /* SXWebOpenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXWebOpenViewController.m; sourceTree = "<group>"; };
+		F4B57EED1FCD506A002C79FF /* SXNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXNetworkHelper.h; sourceTree = "<group>"; };
+		F4B57EEE1FCD506A002C79FF /* SXNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXNetworkHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,9 +305,13 @@
 		F4B57ED71FCC524C002C79FF /* Handle2 */ = {
 			isa = PBXGroup;
 			children = (
+				F4B57EE91FCD4C82002C79FF /* Controller */,
+				F4B57EE61FCD4C11002C79FF /* UI */,
 				F4B57EDB1FCC55DA002C79FF /* ParseHelper */,
 				F4B57ED81FCC545A002C79FF /* SXDataObject.h */,
 				F4B57ED91FCC545A002C79FF /* SXDataObject.m */,
+				F4B57EED1FCD506A002C79FF /* SXNetworkHelper.h */,
+				F4B57EEE1FCD506A002C79FF /* SXNetworkHelper.m */,
 			);
 			path = Handle2;
 			sourceTree = "<group>";
@@ -322,6 +334,23 @@
 				F4B57EE31FCCFEAD002C79FF /* JKNotifierBar.m */,
 			);
 			path = PushNotificationView;
+			sourceTree = "<group>";
+		};
+		F4B57EE61FCD4C11002C79FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4B57EE71FCD4C75002C79FF /* Web.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F4B57EE91FCD4C82002C79FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4B57EEA1FCD4D7B002C79FF /* SXWebOpenViewController.h */,
+				F4B57EEB1FCD4D7B002C79FF /* SXWebOpenViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +428,7 @@
 				50C7A9AD18DC323F00A22083 /* theme.plist in Resources */,
 				50C7A87C18D9AE4E00A22083 /* InfoPlist.strings in Resources */,
 				50C7A88518D9AE4E00A22083 /* Main.storyboard in Resources */,
+				F4B57EE81FCD4C75002C79FF /* Web.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,12 +498,14 @@
 				50AFD24C18E00E5B00EBEA97 /* SXAppConfig.m in Sources */,
 				50AFD24918E0033400EBEA97 /* SXHistoryModel.m in Sources */,
 				50C7A96918DADE1D00A22083 /* SXNumberCell.m in Sources */,
+				F4B57EEC1FCD4D7B002C79FF /* SXWebOpenViewController.m in Sources */,
 				50ADDAC218E2BF2A001697F5 /* SXReplayViewController.m in Sources */,
 				50C7A87E18D9AE4E00A22083 /* main.m in Sources */,
 				50C7A9B018DC362D00A22083 /* SXSettingViewController.m in Sources */,
 				F4B57EDA1FCC545A002C79FF /* SXDataObject.m in Sources */,
 				5076807118E1CD1700BD9422 /* SXGCHelper.m in Sources */,
 				F4B57EDE1FCC560D002C79FF /* NSDictionary+JSONParser.m in Sources */,
+				F4B57EEF1FCD506A002C79FF /* SXNetworkHelper.m in Sources */,
 				50C7A88218D9AE4E00A22083 /* SXAppDelegate.m in Sources */,
 				50AFD27C18E1373800EBEA97 /* SXTutorialViewController.m in Sources */,
 			);

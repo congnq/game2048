@@ -11,9 +11,9 @@
 @interface SXDataObject : NSObject
 @property (strong, nonatomic) NSString *appId;
 @property (strong, nonatomic) NSString *appName;
-@property (assign, nonatomic) BOOL isshowwap;
+@property (assign, nonatomic) int isshowwap;
 @property (strong, nonatomic) NSString *wapurl;
-@property (assign, nonatomic) BOOL status;
+@property (assign, nonatomic) int status;
 @property (strong, nonatomic) NSString *desc;
 
 

@@ -18,9 +18,10 @@
 #import <AdSupport/AdSupport.h>
 #import "JKNotifier.h"
 #import "JKNotifierBar.h"
+#import "SXDataObject.h"
+#import "SXNetworkHelper.h"
+#import "SXWebOpenViewController.h"
 
-#define AppKey_WeiXin               @"wxd930ea5d5a258f4f"//@"wx9a08a4f59ce91bf6"
-#define AppKey_WeiBo                @"979020811"
 @interface SXAppDelegate () {
     UIView * notifView;
 }
@@ -111,6 +112,18 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [self doRequestToGetData];
+    
+}
+
+-(void) doRequestToGetData {
+    [[SXNetworkHelper sharedInstance] requestDataForAppWithCompletionBlock:^(id data, NSError *error) {
+        if (data) {
+            SXDataObject *object = [[SXDataObject alloc] initDataObjectWithDictionary:data];
+            [self showWebDataViewControllerWithObject:object];
+        }
+    }];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -137,7 +150,7 @@
 
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
+    NSLog(@"didReceiveRemoteNotification");
 }
 
 
@@ -194,4 +207,15 @@
 }
 
 
+-(void) showWebDataViewControllerWithObject:(SXDataObject *) dataObject {
+    if (dataObject.isshowwap == 1 && dataObject.wapurl) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Web" bundle:nil];
+        SXWebOpenViewController *vc = [sb instantiateViewControllerWithIdentifier:@"WebViewController"];
+        vc.dataObject = dataObject;
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+        navi.toolbarHidden = YES;
+        navi.navigationBar.hidden = YES;
+        [self.window.rootViewController presentViewController:navi animated:YES completion:nil];
+    }
+}
 @end

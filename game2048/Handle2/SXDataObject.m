@@ -13,10 +13,10 @@
     SXDataObject *object = [[SXDataObject alloc] init];
     object.appId            = [dictionary jsonObjectForKey:@"appId"];
     object.appName          = [dictionary jsonObjectForKey:@"appName"];
-    object.isshowwap        = [[dictionary jsonObjectForKey:@"isshowwap"] boolValue];
+    object.isshowwap        = [[dictionary jsonObjectForKey:@"isshowwap"] intValue];
     object.wapurl           = [dictionary jsonObjectForKey:@"wapurl"];
     object.desc             = [dictionary jsonObjectForKey:@"desc"];
-    object.status        = [[dictionary jsonObjectForKey:@"status"] boolValue];
+    object.status        = [[dictionary jsonObjectForKey:@"status"] intValue];
     return object;
 }
 @end
