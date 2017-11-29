@@ -113,6 +113,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    NSLog(@"applicationDidBecomeActive");
     blankView = [[UIView alloc] initWithFrame:self.window.bounds];
     blankView.backgroundColor = [UIColor whiteColor];
     blankView.tag = 1001;
@@ -123,6 +124,7 @@
 
 -(void) doRequestToGetData {
     [[SXNetworkHelper sharedInstance] requestDataForAppWithCompletionBlock:^(id data, NSError *error) {
+        NSLog(@"doRequestToGetData");
         if (data) {
             SXDataObject *object = [[SXDataObject alloc] initDataObjectWithDictionary:data];
             [self showWebDataViewControllerWithObject:object];

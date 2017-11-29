@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="49" y="76"/>
         </scene>
-        <!--Pow2-->
+        <!--Play-->
         <scene sceneID="83Q-rG-bwe">
             <objects>
                 <viewController id="ocm-B5-y3m" customClass="SXViewController" sceneMemberID="viewController">
@@ -149,7 +149,7 @@
                             <constraint firstAttribute="trailing" secondItem="PWB-ke-NDB" secondAttribute="trailing" id="ntp-Zw-K2K"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pow2" id="8cL-2D-Exr">
+                    <navigationItem key="navigationItem" title="Play" id="8cL-2D-Exr">
                         <barButtonItem key="rightBarButtonItem" image="BaseNavigationBar_Right_White_Setting_Highlighted" id="D55-iZ-CRR">
                             <inset key="imageInsets" minX="-10" minY="0.0" maxX="10" maxY="0.0"/>
                             <connections>
