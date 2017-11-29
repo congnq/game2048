@@ -12,7 +12,7 @@
         <!--Web Open View Controller-->
         <scene sceneID="kk2-IS-VTL">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" id="dmy-5M-0dn" customClass="SXWebOpenViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" automaticallyAdjustsScrollViewInsets="NO" id="dmy-5M-0dn" customClass="SXWebOpenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wro-jM-p7S"/>
                         <viewControllerLayoutGuide type="bottom" id="Fb1-2q-6vB"/>
@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pA0-XD-44h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="197"/>
+            <point key="canvasLocation" x="597.60000000000002" y="196.55172413793105"/>
         </scene>
     </scenes>
 </document>

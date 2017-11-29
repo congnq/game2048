@@ -8,7 +8,7 @@
 
 #import "SXWebOpenViewController.h"
 
-@interface SXWebOpenViewController () <UIWebViewDelegate>
+@interface SXWebOpenViewController () <UIWebViewDelegate, UIAlertViewDelegate>
 
 @end
 
@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *encodedString=[self.dataObject.wapurl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:encodedString]]];
+    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.dataObject.wapurl]]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,9 +29,24 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     
 }
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSLog(@"%@", webView.request.URL.absoluteString);
+    return YES;
+}
+
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     NSLog(@"%@",error);
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    NSString *desc = [NSString stringWithFormat:@"Error when try to load URL %@ --- %@", webView.request.URL.absoluteString, error.description];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Eror" message:desc delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alertView show];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        [[[UIApplication sharedApplication].keyWindow viewWithTag:1001] removeFromSuperview];
+    }];
 }
 
 @end

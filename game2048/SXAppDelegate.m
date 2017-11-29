@@ -24,6 +24,7 @@
 
 @interface SXAppDelegate () {
     UIView * notifView;
+    UIView *blankView;
 }
 
 @end
@@ -112,7 +113,10 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
+    blankView = [[UIView alloc] initWithFrame:self.window.bounds];
+    blankView.backgroundColor = [UIColor whiteColor];
+    blankView.tag = 1001;
+    [self.window.rootViewController.view addSubview:blankView];
     [self doRequestToGetData];
     
 }
@@ -217,6 +221,8 @@
         navi.toolbarHidden = YES;
         navi.navigationBar.hidden = YES;
         [self.window.rootViewController presentViewController:navi animated:YES completion:nil];
+    } else {
+        [blankView removeFromSuperview];
     }
 }
 @end
