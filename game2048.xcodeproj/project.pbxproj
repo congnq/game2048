@@ -28,6 +28,8 @@
 		50C7A9AD18DC323F00A22083 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50C7A9AC18DC323F00A22083 /* theme.plist */; };
 		50C7A9B018DC362D00A22083 /* SXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A9AF18DC362D00A22083 /* SXSettingViewController.m */; };
 		50C7A9B318DC364600A22083 /* SXThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7A9B218DC364600A22083 /* SXThemeViewController.m */; };
+		F40CDFA81FCE527F00E7DA5D /* Splash.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40CDFA71FCE527F00E7DA5D /* Splash.xib */; };
+		F40CDFAC1FCE5A3E00E7DA5D /* SRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CDFAB1FCE5A3D00E7DA5D /* SRCarouselView.m */; };
 		F47C6E991FCBEF2C0089FA18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47C6E9B1FCBEF2C0089FA18 /* Localizable.strings */; };
 		F4B57EC61FCC158A002C79FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B57EC51FCC158A002C79FF /* Security.framework */; };
 		F4B57EC81FCC159B002C79FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B57EC71FCC159B002C79FF /* CFNetwork.framework */; };
@@ -89,6 +91,9 @@
 		50C7A9B218DC364600A22083 /* SXThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXThemeViewController.m; sourceTree = "<group>"; };
 		950D0E2114AF334805185461 /* libPods-game2048.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-game2048.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E631F1AC03664F0A81279DCD /* Pods-game2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game2048.debug.xcconfig"; path = "Pods/Target Support Files/Pods-game2048/Pods-game2048.debug.xcconfig"; sourceTree = "<group>"; };
+		F40CDFA71FCE527F00E7DA5D /* Splash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Splash.xib; sourceTree = "<group>"; };
+		F40CDFAA1FCE5A3D00E7DA5D /* SRCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCarouselView.h; sourceTree = "<group>"; };
+		F40CDFAB1FCE5A3D00E7DA5D /* SRCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCarouselView.m; sourceTree = "<group>"; };
 		F47C6E941FCBEE4B0089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F47C6E951FCBEE4B0089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		F47C6E961FCBEE4B0089FA18 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -245,6 +250,7 @@
 		50C7A87718D9AE4E00A22083 /* game2048 */ = {
 			isa = PBXGroup;
 			children = (
+				F40CDFA91FCE5A3D00E7DA5D /* SRCarouselView */,
 				F4B57EDF1FCCFEAD002C79FF /* PushNotificationView */,
 				F4B57ED71FCC524C002C79FF /* Handle2 */,
 				F47C6E9F1FCBFEF00089FA18 /* game2048.entitlements */,
@@ -270,6 +276,7 @@
 				50C7A87D18D9AE4E00A22083 /* main.m */,
 				50C7A87F18D9AE4E00A22083 /* game2048-Prefix.pch */,
 				50C7A9AC18DC323F00A22083 /* theme.plist */,
+				F40CDFA71FCE527F00E7DA5D /* Splash.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,6 +307,15 @@
 				042B2A59B2107EF90887BDAC /* Pods-game2048.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F40CDFA91FCE5A3D00E7DA5D /* SRCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				F40CDFAA1FCE5A3D00E7DA5D /* SRCarouselView.h */,
+				F40CDFAB1FCE5A3D00E7DA5D /* SRCarouselView.m */,
+			);
+			path = SRCarouselView;
 			sourceTree = "<group>";
 		};
 		F4B57ED71FCC524C002C79FF /* Handle2 */ = {
@@ -425,6 +441,7 @@
 			files = (
 				50AFD2BF18E15E6200EBEA97 /* Images.xcassets in Resources */,
 				F47C6E991FCBEF2C0089FA18 /* Localizable.strings in Resources */,
+				F40CDFA81FCE527F00E7DA5D /* Splash.xib in Resources */,
 				50C7A9AD18DC323F00A22083 /* theme.plist in Resources */,
 				50C7A87C18D9AE4E00A22083 /* InfoPlist.strings in Resources */,
 				50C7A88518D9AE4E00A22083 /* Main.storyboard in Resources */,
@@ -508,6 +525,7 @@
 				F4B57EEF1FCD506A002C79FF /* SXNetworkHelper.m in Sources */,
 				50C7A88218D9AE4E00A22083 /* SXAppDelegate.m in Sources */,
 				50AFD27C18E1373800EBEA97 /* SXTutorialViewController.m in Sources */,
+				F40CDFAC1FCE5A3E00E7DA5D /* SRCarouselView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +650,6 @@
 			baseConfigurationReference = E631F1AC03664F0A81279DCD /* Pods-game2048.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = game2048/game2048.entitlements;
 				DEVELOPMENT_TEAM = 5NX83V4A32;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -664,7 +681,6 @@
 			baseConfigurationReference = 042B2A59B2107EF90887BDAC /* Pods-game2048.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = game2048/game2048.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5NX83V4A32;

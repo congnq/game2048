@@ -5,7 +5,7 @@
   Created by Cong Nguyen on 11/27/17.
   Copyright © 2017 Sun Xi. All rights reserved.
 */
-"Score:" = "Score";
+"Score:" = "Score: ";
 "Share" = "Share";
 "Prompt" = "Prompt";
 "Your Score" = "Your Score:";
@@ -16,3 +16,29 @@
 "Do you want to restart?" = "Do you want to restart?";
 "Yes" = "Yes";
 "No" = "No";
+"Simple" = "Simple";
+"Normal" = "Normal";
+"Difficult" = "Difficult";
+"Self-Abuse" = "Self-Abuse";
+"Easy" = "Easy";
+"Mode" = "Mode";
+"Classic Mode" = "Classic Mode";
+"Infinite Mode" = "Infinite Mode";
+"Checkpoint Mode" = "Checkpoint Mode";
+"Settings" = "Settings";
+"Maximum number" = "Maximum number";
+"Time" = "Time";
+
+"Sort By Score" = "Sort By Score";
+"Sort By Time" = "Sort By Time";
+"Start the game" = "Start the game";
+"Merge numbers to get bigger squares!" = "Merge numbers to get bigger squares!";
+"Current Score" = "Score";
+"Highest record" = "Highest";
+"Theme" = "Theme";
+"Default" = "Default";
+"Difficulty" = "Difficulty";
+"Shake" = "Shake";
+"History" = "History";
+"How to play" = "How to play";
+"History PLayback" = "History PLayback";

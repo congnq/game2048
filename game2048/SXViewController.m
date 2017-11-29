@@ -17,6 +17,9 @@
 @interface SXViewController ()<UIAlertViewDelegate,UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *bgView;
+@property (weak, nonatomic) IBOutlet UILabel *guideLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *highestScoreLabel;
 
 @property (strong, nonatomic) NSMutableSet* emptyCellIndexes;
 
@@ -47,6 +50,7 @@
 @property (strong, nonatomic) NSMutableArray* stateArray;
 
 @property (strong, nonatomic) NSArray* themes;
+
 
 @end
 
@@ -110,6 +114,9 @@
     [self updateState];
     _moved = NO;
     [_undoButton setEnabled:NO];
+    self.guideLabel.text = NSLocalizedString(@"Merge numbers to get bigger squares!", @"");
+    self.currentScoreLabel.text = NSLocalizedString(@"Current Score", @"");
+    self.highestScoreLabel.text = NSLocalizedString(@"Highest record", @"");
 }
 
 - (void)viewDidLayoutSubviews {

@@ -23,7 +23,7 @@
 		<key>bg</key>
 		<real>8702911</real>
 		<key>name</key>
-		<string>红色</string>
+		<string>Red</string>
 	</dict>
 	<dict>
 		<key>cell</key>
@@ -46,7 +46,7 @@
 		<key>bg</key>
 		<real>15132410</real>
 		<key>name</key>
-		<string>黄色</string>
+		<string>Yellow</string>
 	</dict>
 	<dict>
 		<key>cell</key>
@@ -69,7 +69,7 @@
 		<key>bg</key>
 		<real>11393254</real>
 		<key>name</key>
-		<string>暗黑</string>
+		<string>Diablo</string>
 	</dict>
 	<dict>
 		<key>cell</key>
@@ -92,7 +92,7 @@
 		<key>bg</key>
 		<real>16773365</real>
 		<key>name</key>
-		<string>蓝色</string>
+		<string>Blue</string>
 	</dict>
 	<dict>
 		<key>cell</key>
@@ -115,7 +115,7 @@
 		<key>bg</key>
 		<real>16773365</real>
 		<key>name</key>
-		<string>绿色</string>
+		<string>Green</string>
 	</dict>
 </array>
 </plist>

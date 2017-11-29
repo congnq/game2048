@@ -23,6 +23,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *highScoreLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *currentScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *highestScoreLabel;
+
 @property (weak, nonatomic) IBOutlet UIView *headerBar;
 
 @property (strong, nonatomic) NSArray* themes;
@@ -62,8 +65,15 @@
     _highScore = [[[NSUserDefaults standardUserDefaults] valueForKey:@"highscore"] integerValue];
     [_highScoreLabel setText:[NSString stringWithFormat:@"%ld",(long)_highScore]];
     [self restoreHistory:_repleyInfo.steps];
+    [self localizedLanguage];
 }
 
+
+-(void) localizedLanguage {
+    self.title = NSLocalizedString(@"History PLayback", @"");
+    self.currentScoreLabel.text = NSLocalizedString(@"Current Score", @"");
+    self.highestScoreLabel.text = NSLocalizedString(@"Highest record", @"");
+}
 - (void)initBgWith:(NSDictionary*)theme
 {
     [_bgView.layer setCornerRadius:3];

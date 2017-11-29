@@ -37,6 +37,8 @@
     _historyArray = [[SXAppConfig sharedAppConfig] history];
      self.clearsSelectionOnViewWillAppear = YES;
      //self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.orderTypeButton.title  = NSLocalizedString(@"Sort By Time", @"");
+    self.title = NSLocalizedString(@"History", @"");
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,15 +62,16 @@
     
     SXHistoryModel* model = [_historyArray objectAtIndex:indexPath.row];
     
-    NSMutableAttributedString* string = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"Score：", @"") attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]}];
+    NSMutableAttributedString* string = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"Score:", @"") attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]}];
     [string appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld",(long)model.score] attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor redColor]}]];
     
-    [string appendAttributedString:[[NSAttributedString alloc] initWithString:@"\t最大数字：" attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]}]];
+    NSString *maximumString = [NSString stringWithFormat:@"\n%@: ", NSLocalizedString(@"Maximum number", @"")];
+    [string appendAttributedString:[[NSAttributedString alloc] initWithString:maximumString attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]}]];
     
     [string appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld",(long)model.maxNum] attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor blueColor]}]];
     
     [cell.textLabel setAttributedText:string];
-    [cell.detailTextLabel setText:[NSString stringWithFormat:@"时间: %@", model.time]];
+    [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Time", @"") , model.time]];
     return cell;
 }
 
@@ -112,7 +115,14 @@
 - (IBAction)order:(UIBarButtonItem*)sender {
     _orderByScore = !_orderByScore;
     [self.tableView beginUpdates];
-    [sender setTitle:_orderByScore?@"分数排序":@"时间排序"];
+    NSString *score = NSLocalizedString(@"Sort By Score", @"");
+    NSString *time = NSLocalizedString(@"Sort By Time", @"");
+    if (_orderByScore) {
+        [sender setTitle:score];
+    } else {
+        [sender setTitle:time];
+    }
+    
     [_historyArray sortUsingComparator:^NSComparisonResult(SXHistoryModel* obj1, SXHistoryModel* obj2) {
         if (_orderByScore) {
             return obj1.score < obj2.score;

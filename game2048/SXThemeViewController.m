@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _numberArray = @[@"2",@"4",@"8",@"16",@"32",@"64",@"128",@"256",@"512",@"1024",@"2048",@"4096",@"8192"];
+    self.title = NSLocalizedString(@"Theme", @"");
 }
 
 - (void)viewDidAppear:(BOOL)animated {

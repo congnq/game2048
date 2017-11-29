@@ -17,6 +17,16 @@
 
 @property (nonatomic) BOOL showDifficult;
 
+@property (weak, nonatomic) IBOutlet UILabel *themeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *themeValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gameLevelLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gameLevelValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *shakeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *historyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *modeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *modeValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *howtoPlayLabel;
+
 @property (weak, nonatomic) IBOutlet UIPickerView *difficultPicker;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *modePicker;
@@ -33,8 +43,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _difficultArray = @[@"简单",@"适中",@"困难",@"自虐",@"无聊"];
-    _modeArray = @[@"经典模式",@"无限模式",@"闯关模式"];
+    self.title  = NSLocalizedString(@"Settings", @"");
+    _difficultArray = @[NSLocalizedString(@"Simple", @""),NSLocalizedString(@"Normal", @""),NSLocalizedString(@"Difficult", @""),NSLocalizedString(@"Self-Abuse", @""),NSLocalizedString(@"Easy", @"")];
+    _modeArray = @[NSLocalizedString(@"Classic Mode", @""),NSLocalizedString(@"Infinite Mode", @""),NSLocalizedString(@"Checkpoint Mode", @"")];
+    [self localizedLanguage];
+}
+
+-(void) localizedLanguage {
+    self.themeLabel.text = NSLocalizedString(@"Theme", @"");
+    self.themeValueLabel.text = NSLocalizedString(@"Default", @"");
+    self.gameLevelLabel.text = NSLocalizedString(@"Difficulty", @"");
+    self.shakeLabel.text = NSLocalizedString(@"Shake", @"");
+    self.historyLabel.text = NSLocalizedString(@"History", @"");
+    self.gameLevelValueLabel.text = NSLocalizedString(@"Simple", @"");
+    self.modeLabel.text = NSLocalizedString(@"Mode", @"");
+    self.modeValueLabel.text = NSLocalizedString(@"Classic Mode", @"");
+    self.howtoPlayLabel.text = NSLocalizedString(@"How to play", @"");
 }
 
 #pragma mark - Navigation
@@ -107,7 +131,7 @@
             //leaderboardController.leaderboardDelegate = self;
             [self presentViewController:leaderboardController animated:YES completion:nil];
         } else {
-            [[[UIAlertView alloc] initWithTitle:@"提示" message:@"还在测试中，没能连接到game center" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+            
         }
     }
 }

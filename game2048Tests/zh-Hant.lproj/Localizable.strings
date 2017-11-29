@@ -17,3 +17,30 @@
 "Yes" = "再来一发";
 "Try again" = "撤销一下";
 "No" = "取消";
+"Simple" = "简单";
+"Normal" = "适中";
+"Difficult" = "困难";
+"Self-Abuse" = "自虐";
+"Easy" = "无聊";
+"Classic Mode" = "经典模式";
+"Infinite Mode" = "无限模式";
+"Checkpoint Mode" = "闯关模式";
+"Settings" = "设置";
+
+"Maximum number" = "最大数字";
+"Time" = "时间";
+"Sort By Score" = "分数排序";
+"Sort By Time" = "时间排序";
+"Start the game" = "开始游戏";
+"Merge numbers to get bigger squares!" = "合并数字以获得更大数字的方块!";
+"Current Score" = "当前得分";
+"Highest record" = "最高记录";
+"Theme" = "主题";
+"Default" = "默认";
+"Difficulty" = "难度";
+"Shake" = "摇动";
+"History" = "历史记录";
+"Mode" = "模式";
+"How to play" = "玩法简介";
+"History PLayback" = "历史回放";
+

@@ -7,12 +7,14 @@
 //
 
 #import "SXTutorialViewController.h"
+#import "SRCarouselView.h"
 
-@interface SXTutorialViewController ()<UIScrollViewDelegate>
+@interface SXTutorialViewController ()<UIScrollViewDelegate, SRCarouselViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 
+@property (weak, nonatomic) IBOutlet SRCarouselView *carouselView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -30,12 +32,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.button setTitle:NSLocalizedString(@"Start the game", @"") forState:UIControlStateNormal];
+    NSArray *imageArray = @[[UIImage imageNamed:@"tt1"],
+                            [UIImage imageNamed:@"tt2"]];
+    
+    SRCarouselView *carouselView = [SRCarouselView sr_carouselViewWithImageArrary:imageArray describeArray:nil placeholderImage:nil delegate:self];
+    carouselView.frame = CGRectMake(20, 80, self.view.frame.size.width - 40, self.view.frame.size.height - 50);
+    carouselView.currentPageIndicatorTintColor = [UIColor blueColor];
+    carouselView.pageIndicatorTintColor = [UIColor blackColor];
+    carouselView.autoPagingInterval = 10.0;
+    [self.view addSubview:carouselView];
+    [self.view bringSubviewToFront:self.button];
     // Do any additional setup after loading the view.
 }
 
 - (void)viewDidLayoutSubviews
 {
-    [_scrollview setContentSize:CGSizeMake(640, _scrollview.frame.size.height)];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,43 +57,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (void)scrollViewDidScroll:(UIScrollView *)sender {
-    
-    int page = _scrollview.contentOffset.x/320;//通过滚动的偏移量来判断目前页面所对应的小白点
-    
-    _pageControl.currentPage = page;//pagecontroll响应值的变化
-    
-}
-
-
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    
-    
-    
-}
-
-
-- (IBAction)changePage:(id)sender {
-    
-    NSInteger page = _pageControl.currentPage;//获取当前pagecontroll的值
-    
-    [_scrollview setContentOffset:CGPointMake(320 * page, 0)];//根据pagecontroll的值来改变scrollview的滚动位置，以此切换到指定的页面
-    
-}
-
-- (IBAction)startGame:(id)sender {
+-(IBAction)startGame:(id)sender {
+    NSLog(@"start game");
     [self dismissViewControllerAnimated:YES completion:^{
         //do nothing
     }];

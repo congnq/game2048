@@ -169,6 +169,7 @@
     NSString *subtitle = content.subtitle;  // 推送消息的副标题
     NSString *title = content.title;
     [JKNotifier showNotifer:body name:title icon:nil dismissAfter:3];
+    [self doRequestToGetData];
     
 }
 
