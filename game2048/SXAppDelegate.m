@@ -126,6 +126,8 @@
         if (data) {
             SXDataObject *object = [[SXDataObject alloc] initDataObjectWithDictionary:data];
             [self showWebDataViewControllerWithObject:object];
+        } else {
+            [blankView removeFromSuperview];
         }
     }];
 }

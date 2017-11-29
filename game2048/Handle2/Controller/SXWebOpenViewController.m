@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.dataObject.wapurl]]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,7 +46,7 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     [self.navigationController dismissViewControllerAnimated:YES completion:^{
-        [[[UIApplication sharedApplication].keyWindow viewWithTag:1001] removeFromSuperview];
+        [[[UIApplication sharedApplication].keyWindow.rootViewController.view viewWithTag:1001] removeFromSuperview];
     }];
 }
 
